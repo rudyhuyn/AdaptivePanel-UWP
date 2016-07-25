@@ -1,0 +1,124 @@
+﻿<Page
+    x:Class="AdaptivePanel.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AdaptivePanel"
+    xmlns:huyn="using:Huyn"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid Background="Red">
+            <huyn:AdaptivePanel x:Name="AdaptivePanel" Background="Yellow" HorizontalAlignment="Left">
+                <Border   
+                    Width="{x:Bind ContentWidthSlider.Value,Mode=OneWay}"  Height="{x:Bind ContentHeightSlider.Value,Mode=OneWay}" 
+                    BorderBrush="Green" BorderThickness="3" 
+                        Background="LightGray">
+
+                  
+                    <TextBlock Foreground="Black" TextWrapping="Wrap" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet rhoncus odio, id tristique purus. Vestibulum sagittis est in eros molestie, at rutrum felis auctor. Vivamus sollicitudin ipsum quis leo porta pellentesque. Curabitur eu ex sem. Pellentesque id augue id dolor molestie consectetur vel non lorem. In et dui tincidunt, maximus lacus eget, ultricies eros. Suspendisse ut semper enim, ac ornare ex. Donec nisi elit, tempor non felis at, mollis facilisis tortor. Aenean sed dignissim purus, vel dapibus lacus. Sed dui felis, blandit sed blandit ut, mollis in diam. Vestibulum consequat eget mi non dapibus. Sed at sollicitudin magna. Aliquam scelerisque aliquet porta. In congue pharetra metus. Nulla imperdiet ligula non ipsum scelerisque, eget ullamcorper purus vestibulum. Curabitur id dolor at ante cursus bibendum a blandit ex. 
+Vestibulum suscipit, leo sit amet sodales tincidunt, augue tellus fringilla justo, ut gravida urna massa quis felis. Fusce non fermentum justo, non malesuada nibh. Suspendisse scelerisque diam rhoncus molestie semper. Sed dapibus consectetur laoreet. Maecenas ut interdum ante. Proin sed cursus tellus. Phasellus id libero eu neque lobortis pretium et iaculis lacus. Suspendisse potenti. Phasellus non accumsan ligula, sit amet aliquet ante. Ut fermentum velit tempor, venenatis dui at, consequat metus. Morbi ac viverra ante. Suspendisse non quam lectus. Vivamus semper bibendum velit et convallis. 
+Curabitur tincidunt magna sit amet sem consequat varius. Donec consectetur efficitur rutrum. Proin blandit lectus efficitur dictum aliquet. Morbi rhoncus egestas maximus. Phasellus vel ex libero. Ut ut elementum metus. Integer commodo ligula non diam fringilla pellentesque. Cras libero lacus, facilisis et risus et, euismod sagittis mauris. 
+Mauris vulputate eleifend erat, at consequat lacus ultricies vel. Curabitur volutpat arcu vitae erat eleifend sodales. Integer euismod nisi non pulvinar pharetra. Duis facilisis sem at enim sodales condimentum. Duis massa nisi, condimentum et dignissim a, condimentum nec purus. Phasellus et eros molestie purus fringilla iaculis et nec velit. Phasellus facilisis posuere dolor sit amet ullamcorper. Praesent euismod elementum augue luctus laoreet. In id blandit dui. Quisque venenatis metus dolor, sed laoreet ante sodales scelerisque. 
+Quisque vestibulum, velit quis sagittis sodales, massa massa consectetur leo, id consectetur nibh magna gravida nunc. Donec purus risus, congue sit amet semper et, molestie a nunc. Nam eget libero lacinia, accumsan purus sed, aliquam lectus. Maecenas orci libero, egestas quis finibus vel, semper ut urna. Praesent tellus dolor, condimentum quis mollis sed, sagittis elementum magna. Quisque accumsan felis in leo bibendum lacinia. Aliquam lacinia, enim et ultricies finibus, libero lectus scelerisque augue, a porta urna nisl vel quam. Nulla facilisi. Suspendisse congue vitae massa at rutrum. Nam pulvinar lacus ac orci maximus, vitae pharetra libero porttitor. Praesent diam diam, tincidunt nec mattis vitae, sollicitudin ut mauris. Praesent arcu dolor, fringilla vitae dolor in, feugiat laoreet nunc. Ut finibus luctus venenatis. Quisque in libero enim. Etiam porttitor sagittis enim, nec laoreet felis. 
+Proin elit neque, viverra et nisl eget, tincidunt fermentum nisi. Etiam eu ipsum in ex pretium euismod. In mauris purus, vestibulum at purus id, rutrum elementum neque. In a faucibus sapien. Nunc finibus gravida magna, a feugiat est finibus non. Phasellus euismod, ligula eget sollicitudin luctus, est metus blandit nisl, eu dignissim neque augue vel neque. Phasellus eu nisl auctor, consectetur dolor a, porttitor velit. Pellentesque eget velit viverra, scelerisque nisl ac, placerat purus. Donec sit amet ultricies ex. Vestibulum lobortis mattis sagittis. Sed vestibulum suscipit augue, vel consequat felis imperdiet eu. Phasellus maximus, turpis nec aliquam venenatis, velit sem porttitor orci, eu bibendum ligula urna et quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus sed dolor lectus. 
+Nam gravida ipsum sit amet lectus dignissim, non consequat purus accumsan. Nunc eget ex tincidunt, tincidunt libero sollicitudin, porttitor lacus. Nulla faucibus nunc ac nisi pulvinar convallis in in tortor. Nulla accumsan nunc vitae neque sagittis tempus. Donec convallis purus ut nunc placerat iaculis. Nulla facilisi. Cras finibus id sem quis fringilla. Ut placerat commodo eleifend. Quisque aliquet tristique malesuada. Donec ut convallis nulla, ac rhoncus massa. 
+Etiam odio dui, iaculis eget semper sit amet, fermentum in augue. Pellentesque iaculis enim ac consequat volutpat. Donec elit sapien, ultrices nec aliquam ut, sodales ut enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed nunc at leo dignissim fermentum non id metus. Duis nisi nunc, consectetur sed purus quis, venenatis faucibus odio. Suspendisse pharetra nisl et lorem luctus, eu congue ante egestas. Aenean ac velit vitae nisl aliquam sagittis a quis nunc. Integer tellus nibh, vestibulum eget velit a, pretium blandit sem. Donec neque est, convallis in justo non, sagittis congue nisl. Cras mattis sem libero, sollicitudin pellentesque ex tristique vitae. Integer aliquam sapien nec dolor tincidunt vulputate. Etiam ac nulla vel eros varius finibus nec at nibh. Sed dictum tristique dolor eu blandit. Maecenas scelerisque vel lacus rhoncus feugiat. 
+Vivamus eget justo sollicitudin ante sollicitudin elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam molestie nec felis vitae iaculis. Nullam fermentum neque tellus, non finibus magna blandit a. Cras interdum aliquet quam a pulvinar. Aliquam erat volutpat. Sed non felis ipsum. Nunc sit amet suscipit enim. Donec porta, enim sit amet malesuada egestas, quam risus gravida elit, eleifend fermentum nunc nulla non nulla. Sed in scelerisque justo. Vestibulum nunc nisi, semper ac congue sit amet, fermentum non tellus. 
+Maecenas faucibus sapien a ornare ultrices. Nunc lacinia nec neque in lacinia. Sed tellus neque, pellentesque euismod eleifend quis, iaculis tincidunt leo. Aliquam tempus mi sed lectus dapibus finibus. Nunc vel dapibus diam. Aliquam vitae volutpat est, non maximus augue. In ac bibendum libero. Phasellus non est gravida, condimentum nisi et, ultricies augue. 
+Mauris aliquet nunc a lorem lobortis blandit. Maecenas quis finibus quam. Aenean id convallis ligula, at accumsan lectus. Quisque pellentesque tincidunt eleifend. Mauris tristique dapibus risus, a pretium nulla pharetra euismod. Vivamus iaculis dolor justo, id viverra dui vulputate vel. Nulla facilisi. Nulla id ligula ipsum. Aenean sodales enim et tempor convallis. Vivamus nec efficitur lectus, a faucibus massa. Aenean vestibulum lorem sem, id finibus turpis hendrerit in. Nulla eget neque sed urna. "/>
+                </Border>
+            </huyn:AdaptivePanel>
+        </Grid>
+        <StackPanel  Grid.Row="1">
+            <Pivot >
+                <PivotItem Header="Width">
+
+
+
+
+                    <StackPanel>
+
+
+
+
+                        <TextBlock Text="Horizontal Fill Behavior:"/>
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton GroupName="HorizontalBehaviorRadioGroup" IsChecked="True"  Tag="Standard" Content="Standard" Click="RadioHorizontalBehavior_Click"/>
+                            <RadioButton GroupName="HorizontalBehaviorRadioGroup"  Tag="MinSizeOnlyIfAvailable" Content="Min Size Only If Available" Click="RadioHorizontalBehavior_Click"/>
+                            <RadioButton GroupName="HorizontalBehaviorRadioGroup" Tag="StretchToMaxSizeIfPossible" Content="Stretch To Max Size If Possible" Click="RadioHorizontalBehavior_Click"/>
+                        </StackPanel>
+
+                        <CheckBox x:Name="MinimumWidthCheckbox" Content="Set Minimum" Click="MinimumWidthCheckbox_Click"/>
+                        <Slider x:Name="MinimumWidthSlider" 
+                   Minimum="100" Value="500" Maximum="2000"
+                    Visibility="Collapsed"/>
+
+
+                        <CheckBox x:Name="MaximumWidthCheckbox" Content="Set Maximum" Click="MaximumWidthCheckbox_Click"/>
+                        <Slider x:Name="MaximumWidthSlider" 
+                    Minimum="100" Value="1000" Maximum="2000"
+                    Visibility="Collapsed"/>
+
+                        <TextBlock Text="Horizontal Alignment"/>
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton Content="Left"   IsChecked="True" Tag="Left" Click="HorizontalAlignmentRadio_Click" GroupName="HorizontalRadioGroup"/>
+                            <RadioButton Content="Center" Tag="Center" Click="HorizontalAlignmentRadio_Click" GroupName="HorizontalRadioGroup"/>
+                            <RadioButton Content="Right" Tag="Right" Click="HorizontalAlignmentRadio_Click" GroupName="HorizontalRadioGroup"/>
+                            <RadioButton Content="Stretch" Tag="Stretch" Click="HorizontalAlignmentRadio_Click" GroupName="HorizontalRadioGroup"/>
+                        </StackPanel>
+                    </StackPanel>
+                </PivotItem>
+                <PivotItem Header="Height">
+
+                    <StackPanel>
+                        <TextBlock Text="Vertical Fill Behavior:"/>
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton GroupName="VerticalBehaviorRadioGroup" IsChecked="True" Tag="Standard" Content="Standard" Click="RadioVerticalBehavior_Click"/>
+                            <RadioButton GroupName="VerticalBehaviorRadioGroup"  Tag="MinSizeOnlyIfAvailable" Content="Min Size Only If Available" Click="RadioVerticalBehavior_Click"/>
+                            <RadioButton GroupName="VerticalBehaviorRadioGroup" Tag="StretchToMaxSizeIfPossible" Content="Stretch To Max Size If Possible" Click="RadioVerticalBehavior_Click"/>
+                        </StackPanel>
+
+
+                        <CheckBox x:Name="MinimumHeightCheckbox" Content="Set Minimum" Click="MinimumHeightCheckbox_Click"/>
+                        <Slider x:Name="MinimumHeightSlider" 
+                   Minimum="100" Value="500" Maximum="2000"
+                    Visibility="Collapsed"/>
+
+
+                        <CheckBox x:Name="MaximumHeightCheckbox" Content="Set Maximum" Click="MaximumHeightCheckbox_Click"/>
+                        <Slider x:Name="MaximumHeightSlider" 
+                    Minimum="100" Value="1000" Maximum="2000"
+                    Visibility="Collapsed"/>
+
+                        <TextBlock Text="Horizontal Alignment"/>
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton Content="Top" Tag="Top" Click="VerticalAlignmentRadio_Click" GroupName="VerticalAlignmentRadioGroup"/>
+                            <RadioButton Content="Center" Tag="Center" Click="VerticalAlignmentRadio_Click" GroupName="VerticalAlignmentRadioGroup"/>
+                            <RadioButton Content="Bottom" Tag="Bottom" Click="VerticalAlignmentRadio_Click" GroupName="VerticalAlignmentRadioGroup"/>
+                            <RadioButton Content="Stretch" IsChecked="True" Tag="Stretch" Click="VerticalAlignmentRadio_Click" GroupName="VerticalAlignmentRadioGroup"/>
+                        </StackPanel>
+                    </StackPanel>
+                </PivotItem>
+                <PivotItem Header="Content">
+                    <StackPanel>
+                        <Slider x:Name="ContentWidthSlider" 
+                   Minimum="100" Value="200" Maximum="2000"/>
+
+
+                        <Slider x:Name="ContentHeightSlider" 
+                    Minimum="100" Value="200" Maximum="2000"/>
+
+                    </StackPanel>
+                </PivotItem>
+
+
+            </Pivot>
+        </StackPanel>
+    </Grid>
+</Page>
